@@ -302,7 +302,7 @@ spec:
         {{- end }}
       machineLabelSelector:
         matchLabels:
-          node-role.kubernetes.io/control-plane: "true"
+          rke.cattle.io/control-plane-role: "true"
     {{- end }}
     {{- if .Values.cluster.config.workerConfig }}
     - config:
